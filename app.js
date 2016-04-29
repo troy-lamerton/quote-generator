@@ -11,10 +11,19 @@
 
 $(document).ready(function() {
 
-$.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(quote) {
-  $('#quote').append(quote[0].content);
-  $('#author').append(" — " + quote[0].title);
-})
+function newQuote() {
+  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(quote) {
+    $('#quote').append(quote[0].content);
+    $('#author').append(" — " + quote[0].title);
 
-})
+    //replace %data% in tweet link to quote text
+    var tweetLink = $('.twitter-share-button').attr("href");
+    //remove <p> and </p> tags from quote content
+    var escapedQuote = quote[0].content.slice(3, quote[0].content.length - 5);
+    tweetLink = tweetLink.replace("%data%", (escapedQuote + " — " + quote[0].title));
+    $('.twitter-share-button').attr("href", tweetLink);
+  })
+}
+
+});
 
