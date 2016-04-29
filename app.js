@@ -13,8 +13,8 @@ $(document).ready(function() {
 
 function newQuote() {
   $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(quote) {
-    $('#quote').append(quote[0].content);
-    $('#author').append(" — " + quote[0].title);
+    $('#quote').html(quote[0].content);
+    $('#author').html(" — " + quote[0].title);
 
     //replace %data% in tweet link to quote text
     var tweetLink = $('.twitter-share-button').attr("href");
@@ -25,5 +25,11 @@ function newQuote() {
   })
 }
 
+newQuote();
+
+$('.btn').click(function(e) {
+    newQuote();
+})
 });
+
 
