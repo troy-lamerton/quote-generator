@@ -13,7 +13,6 @@ $(document).ready(function() {
 
 function newQuote() {
   $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(quote) {
-    
     $('#quote').html(quote[0].content);
     $('#author').html(" — " + quote[0].title);
 
@@ -33,4 +32,5 @@ $('.btn').click(function() {
 });
 
 });
+
 
