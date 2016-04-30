@@ -25,10 +25,7 @@ function newQuote(quoteText) {
     var escapedQuote = quote[0].content.slice(3, quote[0].content.length - 5);
     //remove <strong> </strong> etc tags
     escapedQuote = $('#quote').text();
-    console.log(escapedQuote);
-    
-    console.log(escapedQuote);
-    escapedQuote = escapedQuote.replace(/';'/g, semiColon);
+    escapedQuote = escapedQuote.replace(/;/g, semiColon);
     console.log(escapedQuote);
     //tweetLink = tweetLink.replace("%data%", (escapedQuote + " — " + quote[0].title));
     tweetLink = tweetLink.slice(0, 38) + (escapedQuote + " — " + quote[0].title);
