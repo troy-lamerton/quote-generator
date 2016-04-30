@@ -20,8 +20,7 @@ function newQuote() {
     var tweetLink = $('.twitter-share-button').attr("href");
     //remove <p> and </p> tags from quote contet
     //remove <strong> </strong> etc tags
-    var escapedQuote = $('#quote').text();
-    console.log(escapedQuote);
+    escapedQuote = $('#quote').text();
     escapedQuote = escapedQuote.replace(/;/g, semiColon);
     console.log(escapedQuote);
     //tweetLink = tweetLink.replace("%data%", (escapedQuote + " — " + quote[0].title));
