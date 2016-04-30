@@ -1,42 +1,29 @@
 body {
   text-align:center;
-  background-color: black;
+  background-image: url('images/grass.jpg');
+  background-size: 100%;
   color: white;
 }
 
-.quote {
-  background-color: rgba(255,255,255,0.5);
-  max-width:50%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  padding:8px;
-  color: black;
-}
 
 #author {
   font-style: italic;
   text-align: right;
 }
 
-.btn {
-  color: green;
-}
-
-.twitter-share-button {
+/* Twitter button adapted from: */
+.twitter-share-button, .btn {
   inherit: none;
   height: 16px;
   display: inline-block;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  gradient background -- thanks http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -ms-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -moz-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -o-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEFEFE), color-stop(1, #DFDFDF));
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -webkit-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
-  background-color: #1b95e0 ;
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -ms-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -moz-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -o-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEFEFE), color-stop(1, #DFDFDF));
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -webkit-linear-gradient(top, #FEFEFE 0%, #DFDFDF 100%);
   border: 1px solid #cccccc;
   padding-left: 22px;
   padding-right: 4px;
@@ -50,9 +37,53 @@ body {
   text-decoration: none;
 }
 .twitter-share-button:hover {
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -ms-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -moz-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -o-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(1, #d9d9d9));
-  background: url('https://si0.twimg.com/images/dev/cms/intents/bird/bird_blue/bird_16_blue.png') no-repeat 2px 1px, -webkit-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -ms-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -moz-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -o-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(1, #d9d9d9));
+  background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -webkit-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
 }
+
+blockquote   {
+  background-color: #e5e5e5;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  padding: 0 16px 16px 16px;
+  width: 50%;
+}
+ 
+.tweet-style {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.btn {
+  background-image: none;
+  padding-left: 4px;
+  background-color: #e5e5e5;
+}
+
+header {
+ }
+
+ .shade {
+  background-origin: content-box;
+  background-color: rgba(0,0,0,0.35);
+  margin-left: auto;
+  margin-right: auto; 
+  width:60%;
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+ }

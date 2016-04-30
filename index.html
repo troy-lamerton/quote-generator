@@ -8,20 +8,22 @@
 
 </head>
 <body>
+<div class="shade">
   <header>
       <h1>Q-Quote Generator</h1>
       <p>Click the button to get a quote!</p>
   </header>
 
   <blockquote class="quote">
-    <div id="quote"></div>
-    <p id="author"></p>
+    <div id="quote" class="tweet-style"></div>
+    <p id="author" class="tweet-style"></p>
   </blockquote>
-  <button type="submit" class="btn">Get a new Quote!</button>
+  <a type="submit" class="btn" href="#">Get a new Quote!</a>
   <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=%data%" data-size="large" data-url="https://dev.twitter.com/web/twet-button">Tweet quote</a>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"> </script>
-  <script src="app.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"> </script>
+<script src="app.js"> </script>
 
   
 </body>

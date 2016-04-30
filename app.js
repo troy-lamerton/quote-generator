@@ -15,25 +15,19 @@ function newQuote() {
   $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(quote) {
     $('#quote').html(quote[0].content);
     $('#author').html(" — " + quote[0].title);
-    console.log(quote[0].content);
-    //replace %data% in tweet link to quote text
     var tweetLink = $('.twitter-share-button').attr("href");
     //remove <p> and </p> tags from quote contet
     //remove <strong> </strong> etc tags
     escapedQuote = $('#quote').text();
     escapedQuote = escapedQuote.replace(/;/g, semiColon);
-    console.log(escapedQuote);
-    //tweetLink = tweetLink.replace("%data%", (escapedQuote + " — " + quote[0].title));
     var tweetQuote = escapedQuote.length;
     var tweetAuthor = quote[0].title.length + 3;
 
-
     if (tweetQuote + tweetAuthor > 140){
-        console.log("If statemnt");
         escapedQuote = escapedQuote.slice(0 , 140 - tweetAuthor - 3) + "...";
-        }
+     }
 
-        tweetLink = tweetLink.slice(0, 38) + (escapedQuote + " — " + quote[0].title);
+    tweetLink = tweetLink.slice(0, 38) + (escapedQuote + " — " + quote[0].title);
     
 
     $('.twitter-share-button').attr("href", tweetLink);
