@@ -25,10 +25,9 @@ function newQuote() {
 
     if (tweetQuote + tweetAuthor > 140){
         escapedQuote = escapedQuote.slice(0 , 140 - tweetAuthor - 3) + "...";
-     }
+    }
 
     tweetLink = tweetLink.slice(0, 38) + (escapedQuote + " — " + quote[0].title);
-    
 
     $('.twitter-share-button').attr("href", tweetLink);
   });

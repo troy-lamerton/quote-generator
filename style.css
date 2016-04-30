@@ -11,7 +11,7 @@ body {
   text-align: right;
 }
 
-/* Twitter button adapted from: */
+/* Twitter button adapted from: https://gist.github.com/jpwright/2339817 */
 .twitter-share-button, .btn {
   inherit: none;
   height: 16px;
@@ -44,6 +44,7 @@ body {
   background: url('http://assets.espn.go.com/prod/assets/bird_16_blue.png') no-repeat 2px 1px, -webkit-linear-gradient(top, #f7f7f7 0%, #d9d9d9 100%);
 }
 
+/* Quote display adapted from: https://dev.twitter.com/web/embedded-tweets/css */
 blockquote   {
   background-color: #e5e5e5;
   color: black;
